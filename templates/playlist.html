@@ -1,0 +1,7 @@
+<ion-view view-title="Playlist">
+  <ion-content padding="true">
+    <h1>{{single.title.rendered}}</h1>
+    <img max-height="100%" width="100%" src="{{single._embedded['wp:featuredmedia'][0].source_url}}"> 
+    <div ng-bind-html="single.content.rendered"></div>
+  </ion-content>
+</ion-view>
